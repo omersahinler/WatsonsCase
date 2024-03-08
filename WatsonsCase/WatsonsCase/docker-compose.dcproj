@@ -6,7 +6,7 @@
     <ProjectGuid>70f5259c-16e6-41f6-9db9-c7abaab496ed</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>StockAPI.api</DockerServiceName>
+    <DockerServiceName>WatsonsCase.Gateway</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
