@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b11f8364-58e1-4866-9997-65fb40f1a2df</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MassTransit" Version="8.1.3" />
+	  <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.3" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.16">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+	  <PackageReference Include="ObjectToQuery" Version="0.10.1" />
+	  <PackageReference Include="Pompa" Version="1.0.1" />
+	  <PackageReference Include="StackExchange.Redis" Version="2.7.27" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\MediatorAuthService.Application\WatsonsCase.Application.csproj" />
+  </ItemGroup>
+
+</Project>
